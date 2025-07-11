@@ -1,0 +1,167 @@
+*
+{
+box-sizing: border-box;
+font-family: "Roboto",sans-serif;
+font-size: 1rem;
+}
+body
+{
+background-color: #DFDFDF;
+line-height: 1.7;
+}
+
+/* Navigation bar */
+.nav
+{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+overflow: hidden;
+background-color: #222;
+z-index: 1;
+}
+.navcenter ul
+{
+    list-style-type: none;
+    margin: 0;
+padding: 0;
+}
+.navcenter
+{
+margin: auto;
+width: 770px;
+height: inherit;
+border-collapse: collapse;
+}
+.navcenter li
+{
+float: left;
+}
+.navcenter li.name
+{
+font-size: 1.5rem;
+font-weight: 300;
+float: right;
+color: white;
+text-align: center;
+padding: 5px 16px;
+vertical-align: middle;
+height: inherit;
+margin: auto;
+}
+.navcenter li.name b
+{
+    font-size: 1.5rem;
+}
+.navcenter a
+{
+display: block;
+color: white;
+text-align: center;
+padding: 12px 16px;
+text-decoration: none;
+}
+.inactive:hover
+{
+background-color: #111;
+}
+.inactive:active
+{
+background-color: #4caf50;
+}
+.active
+{
+background-color: #4CAF50;
+}
+
+/* Body */
+
+.center
+{
+margin: auto;
+width: 770px;
+padding: 40px 0px 8px;
+border-collapse: collapse;
+}
+.box
+{
+width: 100%;
+margin-bottom: 16px;
+background-color: #FFFFFF;
+font-size: 12pt;
+white-space: break-all;
+word-wrap: break-word;
+padding: 12px;
+border: none;
+}
+
+/* headers */
+
+h1
+{
+    margin-bottom: 0px;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+h1 b
+{
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+/* Profile pic */
+
+.frame
+{
+    max-width: 250px;
+    padding: 5px;
+    float:right;
+}
+.frame img
+{
+width: 100%;
+height: auto;
+border-radius: 50%
+}
+div.desc
+{
+padding: 0px;
+text-align: left;
+font-family: monospace;
+}
+
+/* Bibliography */
+.publications li
+{
+    padding: 3px; 
+}
+
+.publications ol
+{
+    top: 0;
+    list-style-type: none;
+    padding-left: 5px; 
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 786px)
+{
+.box
+{
+width: 100%;
+}
+.center
+{
+width: 100%;
+}
+}
+@media only screen and (max-width: 510px)
+{
+.frame
+{
+    max-width: 100%;
+    padding: 5px;
+}
+}
